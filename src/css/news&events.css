@@ -16,7 +16,7 @@
 
 /*head*/
 .hero-why-help-us {
-    background-image: url('/src/img/pics/60708162_644954472687601_8344728964836622336_n.jpg');
+    background-image: url('../src/img/pics/60708162_644954472687601_8344728964836622336_n.jpg');
     background-size: cover;
     background-position: center 30%;
     background-repeat: no-repeat;
@@ -664,4 +664,5 @@ display: grid;
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.9); }
   to { opacity: 1; transform: scale(1); }
+
 }
