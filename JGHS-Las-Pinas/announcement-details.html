@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Announcement Details</title>
+  <link rel="stylesheet" href="/src/css/styles.css">
+  <link rel="stylesheet" href="/src/css/Home.css">
+  <style>
+    .announcement-detail-page {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .announcement-detail-page h2 {
+      font-size: 2.2rem;
+      color: #2e9b51;
+      margin-bottom: 1rem;
+    }
+
+    .announcement-detail-page p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 10px 16px;
+      background: #2e9b51;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .back-btn:hover {
+      background: #1d6e3c;
+    }
+  </style>
+</head>
+<body>
+  <section class="announcement-detail-page" id="graduation">
+    <h2>🎓 Graduation Day is Coming!</h2>
+    <p>Our graduation ceremony is scheduled for <strong>July 5, 2025</strong>.</p>
+    <p>
+      All graduating students must ensure they have completed the following:
+      <ul>
+        <li>Cleared academic and financial obligations</li>
+        <li>Submitted clearance forms</li>
+        <li>Ordered academic regalia by June 20</li>
+      </ul>
+    </p>
+    <p>
+      The event will take place in the school auditorium at 9:00 AM. Family and friends are welcome.
+    </p>
+    <a href="Joseph-Gualandi-School-Las-Piñas.html" class="back-btn">← Back to Home</a>
+  </section>
+
+  <section class="announcement-detail-page" id="enrollment">
+    <h2>📝 Enrollment for SY 2025–2026</h2>
+    <p>Online enrollment starts June 10 via the student portal.</p>
+    <p>Make sure to update your profile and verify your subjects with your academic adviser.</p>
+    <a href="Joseph-Gualandi-School-Las-Piñas.html" class="back-btn">← Back to Home</a>
+  </section>
+
+  <section class="announcement-detail-page" id="maintenance">
+    <h2>🔧 Campus Maintenance Notice</h2>
+    <p>The campus will be closed on June 3–4 due to scheduled electrical maintenance.</p>
+    <p>All classes and activities will shift to online mode during this period.</p>
+    <a href="Joseph-Gualandi-School-Las-Piñas.html" class="back-btn">← Back to Home</a>
+  </section>
+
+
+  
+
+  <script>
+    // Scroll to section if hash is present
+    window.addEventListener('load', () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const target = document.querySelector(hash);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  </script>
+</body>
+</html>
