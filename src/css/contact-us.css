@@ -14,7 +14,7 @@ main {
 }
 /*head - laspinas*/
 .hero-why-help-us-Las-pinas {
-    background-image: url('/src/img/pics/JGHS_1.jpg');
+    background-image: url('../src/img/pics/JGHS_1.jpg');
     background-size: cover;
     background-position: center 30%;
     background-repeat: no-repeat;
@@ -380,3 +380,4 @@ footer {
         font-size: 0.9em;
     }
 }
+
