@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff;
+}
+/*head naga*/
+.hero-why-help-us {
+    background-image: url('/src/img/pics/60708162_644954472687601_8344728964836622336_n.jpg');
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Slight dark overlay */
+.hero-why-help-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Light dark overlay */
+    z-index: 1;
+}
+
+/* Ensure content appears above overlay */
+.hero-why-help-us > * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* For tablets and below */
+@media (max-width: 768px) {
+    .hero-content {
+        height: auto;
+        padding: 40px 10px;
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2em;
+        margin-top: 0;
+    }
+
+    .hero-why-help-us {
+        padding: 80px 15px;
+        background-position: center 40%; /* Adjust image slightly */
+    }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 480px) {
+    .hero-why-help-us {
+        padding: 60px 15px;
+        background-position: center -40%;
+    }
+
+    .hero-content {
+        height: auto;
+        padding: 20px 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 1.9em;
+        margin-top: 20%;
+        padding: 10px 0;
+    }
+
+}
+
+/*head - laspinas*/
+.hero-why-help-us-Las-pinas {
+    background-image: url('/src/img/pics/JGHS_1.jpg');
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Slight dark overlay */
+.hero-why-help-us-Las-pinas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Light dark overlay */
+    z-index: 1;
+}
+
+/* Ensure content appears above overlay */
+.hero-why-help-us-Las-pinas > * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content-Las-pinas {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.hero-content-Las-pinas h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* For tablets and below */
+@media (max-width: 768px) {
+    .hero-content-Las-pinas {
+        height: auto;
+        padding: 40px 10px;
+        flex-direction: column;
+    }
+
+    .hero-content-Las-pinas h1 {
+        font-size: 2.2em;
+        margin-top: 0;
+    }
+
+    .hero-why-help-us-Las-pinas {
+        padding: 80px 15px;
+        background-position: center 40%; /* Adjust image slightly */
+    }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 480px) {
+    .hero-why-help-us-Las-pinas {
+        padding: 60px 15px;
+        background-position: center -40%;
+    }
+
+    .hero-content-Las-pinas {
+        height: auto;
+        padding: 20px 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-content-Las-pinas h1 {
+        font-size: 1.9em;
+        margin-top: 20%;
+        padding: 10px 0;
+    }
+
+}
+
+.missionsandvissions {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px auto; /* horizontal center + spacing from top/bottom */
+    background-color: #ffffffdd;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+
+.section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 2.4em;
+    font-weight: 700;
+    color: #1f3c88;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-description {
+    font-size: 1em;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 400;
+    color: #555;
+}
+
+.timeline-line {
+    width: 2px;
+    background-color: #1f3c88;
+    height: 60px;
+    position: relative;
+    margin: 0 auto 30px auto;
+}
+
+.timeline-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #1f3c88;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 6px #1f3c88;
+}
+
+.timeline-line .timeline-dot:first-child {
+    top: -5px;
+}
+
+.timeline-line .timeline-dot:last-child {
+    bottom: -5px;
+}
+
+.misssion {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: block;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .missionsandvissions {
+        margin-top: 25% !important;
+        padding: 20px 15px;
+        margin: 40px 15px;
+        width: calc(100% - 30px);
+    }
+
+    .section-title {
+        font-size: 1.8em;
+    }
+
+    .section-description {
+        font-size: 0.95em;
+    }
+
+    .timeline-line {
+        height: 40px;
+    }
+
+    .timeline-dot {
+        width: 8px;
+        height: 8px;
+    }
+}

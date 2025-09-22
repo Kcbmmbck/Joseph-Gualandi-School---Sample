@@ -1,0 +1,256 @@
+.hero-why-help-us {
+    background-image: url('/src/img/pics/60708162_644954472687601_8344728964836622336_n.jpg');
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Slight dark overlay */
+.hero-why-help-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Light dark overlay */
+    z-index: 1;
+}
+
+/* Ensure content appears above overlay */
+.hero-why-help-us > * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 5%;
+}
+
+/*head - laspinas*/
+.hero-why-help-us-Las-pinas {
+    background-image: url('/src/img/pics/JGHS_1.jpg');
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Slight dark overlay */
+.hero-why-help-us-Las-pinas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Light dark overlay */
+    z-index: 1;
+}
+
+/* Ensure content appears above overlay */
+.hero-why-help-us-Las-pinas > * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content-Las-pinas {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.hero-content-Las-pinas h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* For tablets and below */
+@media (max-width: 768px) {
+    .hero-content-Las-pinas {
+        height: auto;
+        padding: 40px 10px;
+        flex-direction: column;
+    }
+
+    .hero-content-Las-pinas h1 {
+        font-size: 2.2em;
+        margin-top: 0;
+    }
+
+    .hero-why-help-us-Las-pinas {
+        padding: 80px 15px;
+        background-position: center 40%; /* Adjust image slightly */
+    }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 480px) {
+    .hero-why-help-us-Las-pinas {
+        padding: 60px 15px;
+        background-position: center -40%;
+    }
+
+    .hero-content-Las-pinas {
+        height: auto;
+        padding: 20px 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-content-Las-pinas h1 {
+        font-size: 1.9em;
+        margin-top: 20%;
+        padding: 10px 0;
+    }
+
+}
+
+/* Faculty Tree Layout */
+.Faculty {
+  padding: 50px 20px;
+  text-align: center;
+  background: #e6f7ff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tree ul {
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tree li {
+  list-style-type: none;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  padding: 20px 5px 0 5px;
+}
+
+
+
+
+
+
+.tree li:only-child {
+  padding-top: 0;
+}
+
+
+
+.faculty-box {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.faculty-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.faculty-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #6ca0dc;
+  margin-bottom: 15px;
+}
+
+.faculty-box p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.faculty-box strong {
+  font-size: 16px;
+  color: #1f4e79;
+}
+
+@media screen and (max-width: 768px) {
+  .tree ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tree li::before, .tree li::after {
+    display: none;
+  }
+}
+
+/* Animate cards on load */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to each card */
+.org-card {
+  animation: fadeInUp 0.8s ease-in-out both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.org-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Highlight border on hover */
+.org-card:hover {
+  border: 2px solid #007bff;
+}
+
